@@ -26,6 +26,7 @@ body {
   background: #e9eaed;
   color: var(--color-text-main);
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  touch-action: manipulation;
 }
 
 body {
@@ -79,7 +80,7 @@ button {
   height: 100dvh;
   z-index: 60;
   opacity: 0;
-  border-radius: 28px;
+  border-radius: 4px;
   pointer-events: none;
   transform: scale(1.012);
 }
@@ -258,6 +259,7 @@ button {
 }
 
 .bot-bubble {
+  max-width: 92%;
   border: 1px solid rgba(237, 237, 237, 0.8);
   border-radius: 20px 20px 20px 6px;
   background: var(--color-card);
