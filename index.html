@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Calvin 鉴定所</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="top-halo" id="topHalo" aria-hidden="true"></div>
+    <div class="app">
+      <header class="header">
+        <div class="header-text">
+          <h1>Calvin 鉴定所</h1>
+          <p>请投喂内容，等待判断</p>
+        </div>
+      </header>
+
+      <main class="chat-area" id="chatArea" aria-live="polite"></main>
+
+      <div class="thinking-bar" id="thinkingBar"></div>
+
+      <footer class="input-panel">
+        <button class="voice-button" id="voiceButton" type="button" aria-label="按住投喂语音">
+          <span class="mic-icon" aria-hidden="true"></span>
+        </button>
+        <input
+          class="input-box"
+          id="textInput"
+          maxlength="90"
+          autocomplete="off"
+          placeholder="投喂一句内容，Calvin暂时保持怀疑"
+        />
+        <button class="feed-button" id="feedButton" type="button">投喂</button>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
